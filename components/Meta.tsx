@@ -6,7 +6,7 @@ const Meta = ({ title }) => {
       <title>{title}</title>
       <meta
         name="keywords"
-        content="react native, blog, John Doe, tutorial, react navigation"
+        content="Reactm React Native, Samuel Calabresi, blogging, tutorial, teachings"
       />
     </Head>
   );
@@ -14,7 +14,7 @@ const Meta = ({ title }) => {
 
 export default Meta;
 
-// let's set a default title
 Meta.defaultProps = {
-  title: "PressBlog - Your one stop blog for everything React Native",
+  title:
+    "Samuel Calabresi - Insights on React, React Native and Software Craft",
 };

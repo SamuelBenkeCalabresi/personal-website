@@ -19,7 +19,7 @@ const nextConfig = {
     return config;
   },
   reactStrictMode: true,
-  pageExtensions: ["js", "jsx", "md", "mdx"],
+  pageExtensions: ["js", "jsx", "tsx", "md", "mdx"],
   /*  images: {
     loader: "imgix",
     path: "https://images.unsplash.com/",
