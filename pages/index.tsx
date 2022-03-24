@@ -9,7 +9,6 @@ const Home: NextPage = () => {
     <>
       <VStack as="main">
         <Hero />
-        <Social />
         <Profile />
         <Meta />
         {/*  <div>

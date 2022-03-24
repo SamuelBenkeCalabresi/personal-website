@@ -15,7 +15,7 @@ const Hero = () => {
       <Circle
         mt="8"
         position="absolute"
-        bg="blue.100"
+        bg="blue.200"
         opacity="0.1"
         size="300px"
         alignSelf="flex-end"
@@ -27,16 +27,19 @@ const Hero = () => {
       >
         <Box mt={isNotSmallerScreen ? "0" : 16} align-items="flex-start">
           <Text fontSize="3xl" fontWeight="semibold">
-            Nice to see you here 👋 I&#39;m
+            Nice to see you here 👋
           </Text>
-          <Text
-            fontSize="7xl"
-            fontWeight="bold"
-            bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
-            bgClip="text"
-          >
-            Samuel Calabresi
-          </Text>
+          <Flex>
+            <Text
+              fontSize="7xl"
+              fontWeight="bold"
+              bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
+              bgClip="text"
+              lineHeight="5rem"
+            >
+              I&apos;m Samuel Calabresi
+            </Text>
+          </Flex>
           <Text color={isDark ? "gray.200" : "gray.500"} mr="10">
             Building React, React Native & Flutter apps 🚀 Building apps with
             JavaScript, TypeScript, Dart, Swift, Kotlin, NodeJS, AWS and
@@ -45,7 +48,11 @@ const Hero = () => {
           <Button
             mt={8}
             colorScheme="blue"
-            onClick={() => window.open("https://samuelcalabresi.com")}
+            onClick={(e) => {
+              window.location.href = "mailto:samuelbenke29@gmail.com";
+              e.preventDefault();
+            }}
+            bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
           >
             Hire Me
           </Button>
